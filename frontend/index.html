@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Assistant Mini App</title>
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>INVAI Circle</h1>
+            <div class="menu">
+                <button onclick="showView('dashboard')">🏠 Dashboard</button>
+                <button onclick="showView('prices')">💰 Harga</button>
+                <button onclick="showView('orderbook')">📚 Order Book</button>
+                <button onclick="showView('chat')">💬 AI Chat</button>
+                <button onclick="showView('account')">🔐 Akun</button>
+            </div>
+        </header>
+        <main id="content">
+            <!-- konten dimuat oleh JavaScript -->
+            <div class="loader">Memuat...</div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
