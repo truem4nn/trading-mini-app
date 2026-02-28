@@ -4,8 +4,7 @@ tg.ready();
 tg.expand();
 
 // Konstanta
-const BACKEND_URL = window.BACKEND_URL || 'trading-mini-app-production.up.railway.app';
- 
+const BACKEND_URL = 'https://trading-mini-app-production.up.railway.app'; 
 const userId = tg.initDataUnsafe?.user?.id || 0;
 
 // State
