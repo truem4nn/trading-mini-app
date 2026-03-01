@@ -1,5 +1,4 @@
-const BACKEND_URL = 'https://trading-mini-app-production.up.railway.app';
-
+const BACKEND_URL = 'http://trading-mini-app.railway-internal:8000';
 fetch(BACKEND_URL + '/api/market/summary')
   .then(response => response.json())
   .then(data => {
